@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <!-- Header Section -->
     <header>
         <div class="container">
             <h1>My Portfolio</h1>
@@ -24,75 +23,63 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Home Section -->
         <section id="home" class="section">
             <h2>Welcome to My Portfolio!</h2>
             <p>This is my personal portfolio where you can learn more about me, my activities, and my contact. Explore the sections below to know more.</p>
         </section>
 
-        <!-- About Me Section -->
         <section id="about-me" class="section">
             <h2>About Me</h2>
             <div class="about-content">
-                <img src="/assets/images/jo.jpg" alt="Joeriz Justine H. Bernardo" height="150px" width="150px">
+                <img src="/assets/jo.jpg" alt="Joeriz Justine H. Bernardo" height="150px" width="150px">
                 <p>Hi, I'm Joeriz Justine H. Bernardo. I'm a passionate web developer with a love for creating modern, user-friendly websites. I have experience working with HTML, CSS, JavaScript, and React. I'm always learning and improving my skills. My goal is to build websites that are both functional and aesthetically pleasing.</p>
             </div>
             
-            <!-- Hobbies Section -->
             <div class="hobbies">
                 <h3>Hobbies</h3>
                 <p>In my free time, I enjoy engaging in various sports and activities that help me unwind and stay active. These hobbies are not just fun, but they also teach me valuable life skills like teamwork, strategy, and focus, which are important in both personal and professional life. Here are a few things I love doing:</p>
                 
                 <ul>
-                    <!-- Badminton -->
                     <li>
                         <strong>Badminton:</strong> I enjoy playing badminton as it’s a great way to stay active and improve my agility. It also helps me work on my reflexes, which is a valuable skill for problem-solving in web development.
-                        <img src="/assets/images/bad.jpg" alt="Badminton" height="150px" width="200px">
+                        <img src="/assets/bad.jpg" alt="Badminton" height="150px" width="200px">
                     </li>
 
-                    <!-- Volleyball -->
                     <li>
                         <strong>Volleyball:</strong> Volleyball is another sport I love, particularly for its teamwork aspect. It’s an excellent way to develop communication and collaboration skills—qualities I apply when working on team-based coding projects.
-                        <img src="/assets/images/vol.jpg" alt="Volleyball" height="150px" width="200px">
+                        <img src="/assets/vol.jpg" alt="Volleyball" height="150px" width="200px">
                     </li>
 
-                    <!-- Online Games -->
                     <li>
                         <strong>Gamer:</strong> When I’m not coding, I enjoy playing online games. These games challenge my strategic thinking, quick decision-making, and ability to stay focused under pressure, skills that are also valuable when debugging code or working under tight deadlines.
-                        <img src="/assets/images/gam.jpg" alt="Gamer" height="150px" width="200px">
+                        <img src="/assets/gam.jpg" alt="Gamer" height="150px" width="200px">
                     </li>
                 </ul>
             </div>
         </section>
 
- <!-- Activities Section -->
 <section id="activities" class="section">
     <h2>Activities</h2>
     <p>In my free time, I enjoy contributing to open-source projects, attending web development workshops, and exploring new technologies. I'm also a keen problem solver, often participating in coding challenges like those on CodeWars.</p>
     
     <div class="activities-images">
-        <!-- Activity Item 1 (Image 1) -->
         <div class="activity-item">
-            <a href="/assets/images/lus.png" class="lightbox" target="_blank">
-                <img src="/assets/images/lus.png" alt="Activity Image 1" height="150px" width="200px">
+            <a href="/assets/1.png" class="lightbox" target="_blank">
+                <img src="/assets/1.png" alt="Activity Image 1" height="150px" width="200px">
             </a>
             <p>Lesson 2 Assessment 1 (Individual)</p>
         </div>
         
-        <!-- Activity Item 2 (Image 2) -->
         <div class="activity-item">
-            <a href="/assets/images/los.png" class="lightbox" target="_blank">
-                <img src="/assets/images/los.png" alt="Activity Image 2" height="150px" width="200px">
+            <a href="/assets/2.png" class="lightbox" target="_blank">
+                <img src="/assets/2.png" alt="Activity Image 2" height="150px" width="200px">
             </a>
             <p>Lesson 2 Assessment 2</p>
         </div>
     </div>
 </section>
 
-
-        <!-- Contact Section -->
 <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Feel free to reach out to me if you have any questions or would like to collaborate on a project.</p>
@@ -105,7 +92,6 @@
 
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Joeriz Justine H. Bernardo. All Rights Reserved.</p>
@@ -114,7 +100,6 @@
 
     <script src="/js/main.js"></script>
 
-    <!-- Optional JavaScript Lightbox -->
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const lightboxImages = document.querySelectorAll('.lightbox');
@@ -138,7 +123,6 @@
             `;
             document.body.appendChild(lightboxOverlay);
 
-            // Close Lightbox
             const closeBtn = lightboxOverlay.querySelector('.close-btn');
             closeBtn.addEventListener('click', () => {
                 document.body.removeChild(lightboxOverlay);
@@ -147,7 +131,6 @@
     });
 </script>
 
-<!-- Additional CSS for lightbox -->
 <style>
     .lightbox-overlay {
         position: fixed;
